@@ -1,0 +1,10 @@
+<div class="card xl">
+  <h1>Listado de clientes</h1>
+  <hr>
+  <ul>
+    <li *ngFor="let cliente of clientes">
+      {{cliente.nombre}} - {{cliente.cif}}
+    </li>
+  </ul>
+  <button (click)="sendCliente()">Send cliente</button>
+</div>
